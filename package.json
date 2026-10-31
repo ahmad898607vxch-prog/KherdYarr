@@ -1,0 +1,14 @@
+{
+  "name": "kherdyar-telegram-mini-app",
+  "version": "0.1.1",
+  "private": true,
+  "description": "KherdYar educational Telegram Mini App starter",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}

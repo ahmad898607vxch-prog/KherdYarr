@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#101827">
+  <title>KherdYar | خردیار</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand-mark">خ</div>
+      <div class="brand-copy"><strong>KherdYar</strong><span>همراه هوشمند یادگیری</span></div>
+      <button class="avatar" id="profileBtn" aria-label="پروفایل">👤</button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="eyebrow">ویژه دانش‌آموزان پایه هشتم</div>
+        <h1>سلام، آماده‌ای<br><em>باهوش‌تر یاد بگیری؟</em></h1>
+        <p>درس‌ها را بفهم، تمرین کن و با خیال راحت برای امتحان آماده شو.</p>
+        <div class="hero-bottom"><span>🎯 هر روز یک قدم جلوتر</span><span class="spark">✦</span></div>
+      </section>
+
+      <section class="section-head"><div><small>شروع یادگیری</small><h2>چه کاری انجام بدیم؟</h2></div></section>
+      <section class="feature-grid">
+        <button class="feature-card blue" data-open="subjects"><span class="feature-icon">📚</span><b>درس‌های من</b><small>یادگیری موضوعی</small></button>
+        <button class="feature-card purple" data-open="tutor"><span class="feature-icon">🤖</span><b>معلم هوشمند</b><small>سؤال بپرس یا عکس بفرست</small></button>
+        <button class="feature-card green" data-open="quiz"><span class="feature-icon">📝</span><b>آزمون آنلاین</b><small>خودت را بسنج</small></button>
+        <button class="feature-card orange" data-open="notes"><span class="feature-icon">✨</span><b>جزوه و خلاصه</b><small>نکته‌های مهم هر درس</small></button>
+      </section>
+
+      <section class="progress-card">
+        <div class="progress-title"><div><small>مسیر پیشرفت تو</small><b>از همین امروز شروع کن</b></div><span>🏆</span></div>
+        <div class="progress-track"><i></i></div>
+        <div class="progress-foot"><span>هنوز فعالیتی ثبت نشده</span><b>۰ امتیاز</b></div>
+      </section>
+
+      <section class="section-head"><div><small>پیشنهاد خردیار</small><h2>برای شروع</h2></div></section>
+      <button class="daily-card" data-open="quiz"><span class="daily-icon">⚡</span><span><b>آزمون کوتاه امروز</b><small>۵ سؤال برای گرم‌کردن ذهن</small></span><span class="arrow">←</span></button>
+    </main>
+
+    <nav class="bottom-nav">
+      <button class="nav-item active" data-tab="home"><span>⌂</span>خانه</button>
+      <button class="nav-item" data-open="subjects"><span>▤</span>درس‌ها</button>
+      <button class="nav-item" data-open="tutor"><span>✧</span>معلم من</button>
+      <button class="nav-item" data-tab="profile" id="navProfile"><span>◉</span>پروفایل</button>
+    </nav>
+  </div>
+
+  <div class="modal-backdrop hidden" id="modal">
+    <section class="modal">
+      <div class="modal-head"><h3 id="modalTitle">بخش آموزشی</h3><button id="closeModal">✕</button></div>
+      <div id="modalBody"></div>
+    </section>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
